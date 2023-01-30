@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MhyrNoteApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/greenDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/cream</item>
+        <item name="colorSecondaryVariant">@color/greenDark</item>
+        <item name="colorOnSecondary">@color/greenDark</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="bottomSheetDialogTheme">@style/customBottomSheetThemeOverlay</item>
+        <item name="fontFamily">@font/vazir</item>
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:textDirection">rtl</item>
+    </style>
+
+    <!--Bottom Sheet Corner Radius-->
+    <style name="customBottomSheetThemeOverlay" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/customBottomSheetMaterialComponent</item>
+    </style>
+
+    <style name="customBottomSheetMaterialComponent" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/customBottomSheetBorder</item>
+    </style>
+
+    <style name="customBottomSheetBorder">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+    </style>
+
+
+    <!--<style name="customBottomSheetThemeOverlay" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/customBottomSheetMaterialComponent</item>
+    </style>
+
+    <style name="customBottomSheetMaterialComponent" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/customBottomSheetStyle</item>
+    </style>
+
+    <style name="customBottomSheetStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+    </style>-->
+
+</resources>
